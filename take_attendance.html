@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Take Attendance</title>
+    <link rel="stylesheet" type="stylesheet" href="style.css" >
+</head>
+<body>
+    <div style="text-align: center; margin-top: 200px;">
+        <form id="staffSignIn" action="attendance.php" method="post">
+            <div>
+                <label for="uniqueId" style="font-weight: 600;">Unique ID:</label>
+                <input type="number" id="uniqueId" 
+                name="uniqueId" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Unique ID">
+            </div>
+            <div>
+                <label for="biometric2" style="font-weight: 600;">Verify Fingerprint:</label>
+                <input type="text" id="biometric2" style="margin-top: 5px; outline: none; padding: 5px;" 
+                name="biometric2" placeholder="Fingerprint">
+            </div>
+            <div>
+                <button type="submit" id="verifyBtn" style="background-color: rgb(20, 8, 53); color: white; font-weight: 600; padding: 5px; margin-top: 20px; border: 2px solid transparent;"
+                name="verifyBtn" onclick="return validateStaff2()">Click to Sign-In</button>
+            </div>
+        </form>
+    </div> 
+    <script src="script.js"></script>   
+</body>
+</html>

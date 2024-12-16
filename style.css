@@ -1,0 +1,104 @@
+#welcome-text-container {
+    background-color:  yellow;
+    width: 100%;
+    padding: 50px;
+    margin-bottom: 20px;
+}
+#welcome-text {
+    font-size: 100px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+#btn_container {
+    text-align: center;
+}
+#btn1 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+#btn2 {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 5%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#login-container {
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 50%;
+}
+#login-btn  {
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+}
+#container1 {
+    width: 30%;
+    align-content: center;
+}
+#hello-container {
+    margin-top: 100px;
+}
+#admin_options {
+    margin-top: 100px;
+}
+.login-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#loginButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#status {
+    color: green;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#signout-btn {
+    text-align: right;
+    margin-right: 50px;
+}
+#header {
+      text-align: center;
+      margin-top: 50px;
+}
+#attendance {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+#attendance_container {
+    background-color: #bfe9cc;
+    border-radius: 10px;
+}
+th, tr, td {
+    border-bottom: 1px solid #ddd;
+    padding: 20x;
+    font-size: medium;
+}
+#nav_bottom {
+    margin-left: 20px;
+}
+.nav_links {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    font-weight: normal;
+}

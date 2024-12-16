@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Result</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="margin-left: 20px; margin-bottom: 30px;">
+    <header style="display: flex;">
+        <img src="./images/logo.jpg" alt="School logo" id="school-logo" width="100px" height="100px" style="margin-top: 50px; margin-left: 100px;">
+        <h1 style="margin-top: 50px; margin-left: 10px; color: rgb(20, 8, 53);">ABC International Secondary School.</h1>
+    </header>
+    <main>
+        <form id="report-card-form" method="post" action="submission.php" style="margin-top: 30px;">
+            <div>
+                <label for="session">Session:</label>
+                <select type="text" id="session" name="session" placeholder="Eg. first_term_2324" style="outline: none; padding: 5px;" required>
+                    <option value="first_term_" selected>First Term</option>
+                    <option value="second_term_">Second Term</option>
+                    <option value="third_term_">Third Term</option>
+                </select>
+                <input type="text" name="calendar" id="calendar" placeholder="Eg. 2324" maxlength="4" style="margin-left: 20px; outline: none; padding: 5px;" required>
+                <small><i>(Note: 2324 stands for 2023/2024 academic session)</i></small>
+            </div>
+            <div>
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" style="margin-top: 5px; outline: none; padding: 5px;" name="student-name" required>
+            </div>
+            <div>
+                <label for="school-year">School Year:</label>
+                <input type="text" id="school-year" name="school-year" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Eg. 2024/2025" maxlength="9" required>
+            </div>
+            <div>
+                <label for="campus">Campus:</label>
+                <input type="text" id="campus" name="campus" style="margin-top: 5px; outline: none; padding: 5px;" required>
+            </div>
+            <div>
+                <label for="class">Class:</label>
+                <input type="text" id="class" name="class" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Student's class" required>
+            </div>
+            <div>
+                <label for="arm">Arm:</label>
+                <input type="text" id="arm" name="arm" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="A/B/C" maxlength="1" oninput="this.value = this.value.toUpperCase()" required>
+            </div>
+            <div>
+                <label for="student-no">Student No.:</label>
+                <input type="number" id="student-no" style="margin-top: 5px; outline: none; padding: 5px;" name="student-no" required>
+            </div>
+            <div>
+                <label for="position1">Class-Position:</label>
+                <input type="text" id="position1" style="margin-top: 5px; outline: none; padding: 5px;" name="position1" required>
+            </div>
+            <div>
+                <label for="position2">Position(Arm):</label>
+                <input type="text" id="position2" style="margin-top: 5px; outline: none; padding: 5px;" name="position2" required>
+            </div>
+            <div>
+                <label for="teacher">Teacher:</label>
+                <input type="text" id="teacher" style="margin-top: 5px; outline: none; padding: 5px;" name="teacher" required>
+            </div>
+            <div>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject1" style="margin-top: 5px; outline: none; padding: 5px;" name="subject1" placeholder="Subject" required>
+                <input type="number" id="test1" style="margin-top: 5px; outline: none; padding: 5px;" name="test1" placeholder="Test" required>
+                <input type="number" id="exam1" style="margin-top: 5px; outline: none; padding: 5px;" name="exam1" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject2">Subject:</label>
+                <input type="text" id="subject2" style="margin-top: 5px; outline: none; padding: 5px;" name="subject2" placeholder="Subject" required>
+                <input type="number" id="test2" style="margin-top: 5px; outline: none; padding: 5px;" name="test2" placeholder="Test" required>
+                <input type="number" id="exam2" style="margin-top: 5px; outline: none; padding: 5px;" name="exam2" placeholder="Exam" required>
+               
+            </div>
+            <div>
+                <label for="subject3">Subject:</label>
+                <input type="text" id="subject3" style="margin-top: 5px; outline: none; padding: 5px;" name="subject3" placeholder="Subject" required>
+                <input type="number" id="test3" style="margin-top: 5px; outline: none; padding: 5px;" name="test3" placeholder="Test" required>
+                <input type="number" id="exam3" style="margin-top: 5px; outline: none; padding: 5px;" name="exam3" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject4">Subject:</label>
+                <input type="text" id="subject4" style="margin-top: 5px; outline: none; padding: 5px;" name="subject4" placeholder="Subject" required>
+                <input type="number" id="test4" style="margin-top: 5px; outline: none; padding: 5px;" name="test4" placeholder="Test" required>
+                <input type="number" id="exam4" style="margin-top: 5px; outline: none; padding: 5px;" name="exam4" placeholder="Exam" required>
+
+            </div>
+            <div>
+                <label for="subject5">Subject:</label>
+                <input type="text" id="subject5" name="subject5" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test5" name="test5" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam5" name="exam5" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject6">Subject:</label>
+                <input type="text" id="subject6" name="subject6" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test6" name="test6" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam6" name="exam6" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject7">Subject:</label>
+                <input type="text" id="subject7" name="subject7" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test7" name="test7" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam7" name="exam7" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject8">Subject:</label>
+                <input type="text" id="subject8" name="subject8" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test8" name="test8" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam8" name="exam8" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+                
+            </div>
+            <div>
+                <label for="subject9">Subject:</label>
+                <input type="text" id="subject9" name="subject9" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test9" name="test9" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam9" name="exam9" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+               
+            </div>
+            <div>
+                <label for="subject10">Subject:</label>
+                <input type="text" id="subject10" name="subject10" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test10" name="test10" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam10" name="exam10" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+ 
+            </div>
+            <div>
+                <label for="subject11">Subject:</label>
+                <input type="text" id="subject11" name="subject11" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test11" name="test11" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam11" name="exam11" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+            </div>
+            <div>
+                <label for="subject12">Subject:</label>
+                <input type="text" id="subject12" name="subject12" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Subject" required>
+                <input type="number" id="test12" name="test12" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Test" required>
+                <input type="number" id="exam12" name="exam12" style="margin-top: 5px; outline: none; padding: 5px;" placeholder="Exam" required>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="total_days">No. of Days School Opened:</label>
+                <input type="number" id="total_days" name="total_days" style="margin-top: 5px; outline: none; padding: 5px;" required>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="total_attendance">No. of Days Present:</label>
+                <input type="number" id="total_attendance" name="total_attendance" style="margin-top: 5px; outline: none; padding: 5px;" required>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="absence">No. of Days Absent:</label>
+                <input type="number" id="absence" name="absence" style="margin-top: 5px; outline: none; padding: 5px;" required>
+            </div>
+            <div style="margin-top: 10px;">
+                <label for="remark">Teacher's Remark:</label>
+                <textarea name="remark" id="remark" width="300px" height="300px" rows="4" cols="30" maxlength="100" style="outline: none; padding: 5px; resize: none;" required></textarea>
+            </div>
+            <button id="reg_staff_btn" type="submit" style="border: 2px solid transparent; margin-top: 10px; color: white; padding: 10px; font-size: large; font-weight: 600; background-color: rgb(20, 8, 53);">Generate Report Card</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
